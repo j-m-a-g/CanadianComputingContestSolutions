@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="FormatOnSaveOptions">
-    <option name="myRunOnSave" value="true" />
-  </component>
   <component name="Kotlin2JsCompilerArguments">
     <option name="moduleKind" value="plain" />
-  </component>
-  <component name="Kotlin2JvmCompilerArguments">
-    <option name="jvmTarget" value="21" />
-  </component>
-  <component name="KotlinCommonCompilerArguments">
-    <option name="apiVersion" value="2.0" />
-    <option name="languageVersion" value="2.0" />
-  </component>
-  <component name="OptimizeOnSaveOptions">
-    <option name="myRunOnSave" value="true" />
-  </component>
-  <component name="ProjectDictionaryState">
-    <dictionary name="Joseph" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -29,6 +13,9 @@
         </selected-state>
       </profile-state>
     </entry>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="Python 3.11" project-jdk-type="Python SDK">
+    <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="ReaderModeSettings">
     <option name="showLigatures" value="true" />
