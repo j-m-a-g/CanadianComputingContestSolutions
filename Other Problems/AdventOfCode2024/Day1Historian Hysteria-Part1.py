@@ -1,7 +1,7 @@
-workingFile = "locationIDs.txt"
+workingFile = "Other Problems\AdventOfCode2024\locationIDs.txt"
 
 # Test Case
-#workingFile = "orderedIDs.txt"
+#workingFile = "Other Problems\AdventOfCode2024\orderedIDs.txt"
 locationIdList = open(workingFile, "r")
 
 loopRange = 0
