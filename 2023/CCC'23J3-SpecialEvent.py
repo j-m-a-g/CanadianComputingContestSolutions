@@ -1,20 +1,45 @@
-N = int(input())
+from sys import stdin
 
-person_availability_list = []
+n = int(stdin.readline())
+days = [0, 0, 0, 0, 0]
+availability = []
 
-for i in range(N):
-    person_availability = input()
-    person_availability_single = list(person_availability)
-    print(person_availability_single)
-    person_availability_list.extend(person_availability_single)
+daysCopied = []
+dayNumbers = []
+numOfBestDays = 0
+bestDays = []
+
+for a in range(n):
+    availability.append(list(stdin.readline().strip("\n")))
 
 
-print(person_availability_list)
+for a in availability:
+    for b in range(len(a)):
+        if a[b] == "Y":
+            days[b] += 1
 
-index_as_N = N - 1
-N_index_factor = index_as_N * 5
 
-for i in range(len(person_availability_list)):
-    print(i)
-    if person_availability_list[i] == "Y" and person_availability_list[i + N_index_factor] == "Y":
-        print("Something")
+daysCopied.extend(days)
+days.sort(reverse = True)
+
+for d in range(len(days)):
+    for e in range(len(daysCopied)):
+        if daysCopied[e] == days[d]:
+            dayNumbers.append(e + 1)
+
+
+for f in range(len(days)):
+    if f == len(days) - 1:
+        if days[f] == days[f - 1]:
+            numOfBestDays += 1
+    else:
+        if days[f + 1] == days[f]:
+            numOfBestDays += 1
+
+
+for g in range(numOfBestDays):
+    bestDays.append(dayNumbers[g])
+
+
+bestDays.sort()
+print(str(bestDays).strip("[]").replace(" ", ""))
