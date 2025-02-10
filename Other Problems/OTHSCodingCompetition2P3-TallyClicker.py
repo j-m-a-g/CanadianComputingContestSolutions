@@ -1,12 +1,14 @@
-N = input()
-end = "false"
-presses = 0
+from sys import stdin
+import math
 
-while end == "false":
-  if int(N) >= 1111:
-    N = int(N) - 1111
-    presses = presses + 1
-  else:
-    end = "true"
-
-print(int(presses) + int(N))
+n = int(stdin.readline())
+if n >= 1111:
+    secondButtonClicks = n / 1111
+    if secondButtonClicks.is_integer():
+        print(math.floor(secondButtonClicks))
+    else:
+        secondButtonClicks = math.floor(secondButtonClicks)
+        remainingClicks = n - secondButtonClicks * 1111
+        print(remainingClicks + secondButtonClicks)
+else:
+    print(n)
