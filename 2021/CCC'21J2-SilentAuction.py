@@ -1,23 +1,15 @@
 from sys import stdin
-n = int(stdin.readline())
 
-names = []
-bids = []
-greatestBid = 0
-bidIndex = 0
+n = int(stdin.readline())
+auctions = {}
 
 for a in range(n):
-    names.append(stdin.readline().strip("\n"))
-    bids.append(int(stdin.readline()))
+    name = stdin.readline().strip("\n")
+    amount = int(stdin.readline())
+    auctions[name] = amount
 
-
-for b in range(len(bids)):
-    try:
-        if bids[b + 1] > bids[b]:
-            greatestBid = bids[b + 1]
-            bidIndex = b + 1
-    except:
+amounts = sorted(auctions.values())
+for b in auctions:
+    if auctions.get(b) == amounts[-1]:
+        print(b)
         break
-
-
-print(names[bidIndex])
