@@ -1,1 +1,1 @@
-## 👨‍💻 Canadian Computing Contest (CCC) Solutions to Previous Problems Found on DM::OJ
+## 👨‍💻 Canadian Computing Contest (CCC) Solutions ...As Well as Other Problems Found on DM::OJ
