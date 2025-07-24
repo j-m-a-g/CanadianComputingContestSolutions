@@ -1,1 +1,2 @@
-## 👨‍💻 Canadian Computing Contest (CCC) Solutions ...As Well as Other Problems Found on DM::OJ
+# 👨‍💻 Canadian Computing Contest Solutions
+A Github repository storing my Canadian Computing Contest (CCC) solutions from various years as well as other problems found on DM::OJ.
