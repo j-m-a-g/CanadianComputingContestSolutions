@@ -13,6 +13,7 @@ for a in range(m):
 
     canvas.append(currentRow)
 
+
 for c in range(k):
     currentLine = stdin.readline().strip("\n").split()
     if currentLine[0] == "C":
@@ -27,6 +28,7 @@ for c in range(k):
                 canvas[int(currentLine[1]) - 1][d] = "B"
             else:
                 canvas[int(currentLine[1]) - 1][d] = "G"
+
 
 for f in canvas:
     for g in f:
